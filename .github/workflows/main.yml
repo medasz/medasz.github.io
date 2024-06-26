@@ -35,12 +35,10 @@ jobs:
         hexo clean
         hexo g
 
-    # 提交到我们的存放静态资源的仓库
-
-    - name: Build and Deploy
-
-      uses: JamesIves/github-pages-deploy-action@releases/v3
-      with:
-          REPOSITORY_NAME: medasz/medasz.github.io
-          BRANCH: html
-          PUBLISH_DIR: ./public
+    - name: 部署到Github
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          repository-name: medasz/medasz.github.io
+          branch: main
+          folder: public
+          commit-message: "${{ github.event.head_commit.message }} Updated By Github Actions"
