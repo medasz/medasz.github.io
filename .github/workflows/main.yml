@@ -34,10 +34,10 @@ jobs:
       run: |
         hexo clean
         hexo g
-    - name: 部署到Github
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        token: ${{ secrets.GH_TOKEN }}
-        repository-name: medasz/medasz.github.io
-        branch: html
-        folder: .
+    - name: Build and Deploy
+      uses: y4code/hexo-deploy-action@master
+      env:
+        PERSONAL_TOKEN: ${{ secrets.GH_TOKEN }}
+        PUBLISH_REPOSITORY: medasz/medasz.github.io # The repository the action should deploy to.
+        BRANCH: html  # The branch the action should deploy to.
+        PUBLISH_DIR: ./public # The folder the action should deploy.
