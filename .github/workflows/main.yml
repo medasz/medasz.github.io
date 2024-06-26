@@ -1,44 +1,49 @@
-name: GitHub Actions Build and Deploy
+name: 自动部署
+#当有改动推送到master分支时，启动Action
 on:
-  push:
-    branches:
-      - main
-
+  push:
+    branches:
+      - main
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
-    steps:
-
-    - name: 1. git checkout...
-
-      uses: actions/checkout@v1
-
-    - name: 2. setup nodejs...
-
-      uses: actions/setup-node@v1
-
-    - name: 3. install hexo...
-
-      run: |
-        npm install hexo-cli -g
-        npm i -S hexo-prism-plugin -g
-        npm install hexo-generator-search --save -g
-        npm i hexo-permalink-pinyin  -g
-        npm i --save hexo-wordcount -g
-        npm install hexo-filter-github-emojis  -g
-        npm install hexo-generator-feed  -g
-        npm install
-
-    - name: 4. hexo generate public files...
-
-      run: |
-        hexo clean
-        hexo g
-
-    - name: 部署到Github
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检查分支
+        uses: actions/checkout@v2
+        with:
+          ref: master
+      - name: 安装 Node
+        uses: actions/setup-node@v1
+        with:
+          node-version: "18.x"
+      - name: 安装 Hexo
+        run: |
+          export TZ='Asia/Shanghai'
+          npm install hexo-cli -g
+      - name: 缓存 Hexo
+        id: cache-npm
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-node-modules
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+      - name: 安装依赖
+        if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
+        run: |
+          npm install --save
+      - name: 生成静态文件
+        run: |
+          hexo clean
+          hexo generate
+      - name: 部署到Github
         uses: JamesIves/github-pages-deploy-action@v4
         with:
+          token: ${{ secrets.GH_TOKEN }}
           repository-name: medasz/medasz.github.io
           branch: main
           folder: public
-          commit-message: "${{ github.event.head_commit.message }} Updated By Github Actions"
