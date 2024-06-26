@@ -34,3 +34,4 @@ jobs:
           REPOSITORY_NAME: medasz/medasz.github.io
           BRANCH: html
           FOLDER: public
+          token: ${{secrets.GH_TOKEN}}
