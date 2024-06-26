@@ -45,5 +45,5 @@ jobs:
         with:
           token: ${{ secrets.GH_TOKEN }}
           repository-name: medasz/medasz.github.io
-          branch: main
+          branch: html
           folder: public
