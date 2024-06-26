@@ -43,3 +43,4 @@ jobs:
       with:
           REPOSITORY_NAME: medasz/medasz.github.io
           BRANCH: html
+          PUBLISH_DIR: ./public
