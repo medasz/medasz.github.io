@@ -40,4 +40,4 @@ jobs:
         token: ${{ secrets.GH_TOKEN }}
         repository-name: medasz/medasz.github.io
         branch: html
-        folder: public
+        folder: .
