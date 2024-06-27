@@ -31,7 +31,7 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          REPOSITORY_NAME: medasz/medasz.github.io
-          BRANCH: html
-          FOLDER: public
-          GITHUB_TOKEN: ${{secrets.GH_TOKEN}}
+          repository-name: medasz/medasz.github.io
+          branch: html
+          folder: public
+          token: ${{secrets.GH_TOKEN}}
