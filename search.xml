@@ -17,16 +17,16 @@
     
     
     <entry>
-      <title>测试</title>
-      <link href="/2019/04/24/test/"/>
-      <url>/2019/04/24/test/</url>
+      <title>[object Object]</title>
+      <link href="/2024/06/27/test1/"/>
+      <url>/2024/06/27/test1/</url>
       
         <content type="html"><![CDATA[<p>你好，世界！</p>]]></content>
       
       
       <categories>
           
-          <category> Hexo </category>
+          <category> 哈哈哈 </category>
           
       </categories>
       
@@ -43,15 +43,15 @@
     
     <entry>
       <title>测试</title>
-      <link href="/2019/04/24/test1/"/>
-      <url>/2019/04/24/test1/</url>
+      <link href="/2019/04/24/test/"/>
+      <url>/2019/04/24/test/</url>
       
         <content type="html"><![CDATA[<p>你好，世界！</p>]]></content>
       
       
       <categories>
           
-          <category> 哈哈哈 </category>
+          <category> Hexo </category>
           
       </categories>
       
