@@ -17,7 +17,9 @@ jobs:
         run: |
           git submodule init
           git submodule update
-
+          rm themes/cactus/_config.yml
+          mv ./_config.cactus.yml themes/cactus/_config.yml
+  
       - name: Checkout blog repo
         uses: actions/checkout@v4
         with:
