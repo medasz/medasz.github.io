@@ -8,28 +8,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout deploy branch
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: deploy
           path: ./
 
       - name: Checkout blog repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: main
           path: ./source
 
       - name: Set up Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: 20
 
       - name: Install dependencies
         run: |
           npm install && npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           REPOSITORY_NAME: medasz/medasz.github.io
           BRANCH: html
