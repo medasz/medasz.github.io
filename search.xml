@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>sql注入</title>
+      <link href="/2024/06/27/%E5%AE%89%E5%85%A8/sql%E6%B3%A8%E5%85%A5/"/>
+      <url>/2024/06/27/%E5%AE%89%E5%85%A8/sql%E6%B3%A8%E5%85%A5/</url>
+      
+        <content type="html"><![CDATA[<p>SQL注入</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 数据 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 安全 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>博客搭建</title>
       <link href="/2024/06/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/"/>
       <url>/2024/06/27/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/</url>
