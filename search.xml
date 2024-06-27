@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title>Hello World</title>
+      <title>[object Object]</title>
       <link href="/2024/06/27/hello-world/"/>
       <url>/2024/06/27/hello-world/</url>
       
@@ -18,15 +18,15 @@
     
     <entry>
       <title>[object Object]</title>
-      <link href="/2024/06/27/test1/"/>
-      <url>/2024/06/27/test1/</url>
+      <link href="/2024/06/27/%E7%AC%AC%E4%B8%89%E6%B4%BE%E6%96%87%E7%AB%A0/"/>
+      <url>/2024/06/27/%E7%AC%AC%E4%B8%89%E6%B4%BE%E6%96%87%E7%AB%A0/</url>
       
         <content type="html"><![CDATA[<p>你好，世界！</p>]]></content>
       
       
       <categories>
           
-          <category> 哈哈哈 </category>
+          <category> Hexo </category>
           
       </categories>
       
@@ -42,16 +42,16 @@
     
     
     <entry>
-      <title>测试</title>
-      <link href="/2019/04/24/test/"/>
-      <url>/2019/04/24/test/</url>
+      <title>[object Object]</title>
+      <link href="/2024/06/27/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/"/>
+      <url>/2024/06/27/%E7%AC%AC%E4%BA%8C%E7%AF%87%E6%96%87%E7%AB%A0/</url>
       
         <content type="html"><![CDATA[<p>你好，世界！</p>]]></content>
       
       
       <categories>
           
-          <category> Hexo </category>
+          <category> 哈哈哈 </category>
           
       </categories>
       
