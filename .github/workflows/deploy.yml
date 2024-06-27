@@ -17,12 +17,14 @@ jobs:
         run: |
           git submodule init
           git submodule update
-
+  
       - name: Checkout blog repo
         uses: actions/checkout@v4
         with:
           ref: main
           path: ./source
+          run: |
+            mv ./source/_config.cactus.yml themes/cactus/_config.yml
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
