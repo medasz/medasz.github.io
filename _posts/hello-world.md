@@ -1,8 +1,6 @@
 ---
-title:
-  "{ title }": 
-date:
-  "{ date }": 
+title: $hello-world
+date: $2024-06-27 21:49:37
 author: medasz
 toc: "true"
 tags: 
