@@ -39,9 +39,9 @@ social_links:
 #  -
 #    icon: facebook
 #    link: /
-  -
-    icon: mail
-    link: 601364951@qq.com
+#  -
+#    icon: mail
+#    link: 601364951@qq.com
 #  -
 #    icon: mastodon
 #    label: mastodon.social
@@ -53,7 +53,7 @@ social_links:
 
 # Customize the overview with displaying a tagcloud on the index page.
 # Options: https://hexo.io/docs/helpers.html#tagcloud
-tags_overview: false
+tags_overview: true
 
 # Customize the overview with the most recent blog posts on the index page.
 # Options:
