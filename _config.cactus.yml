@@ -19,8 +19,6 @@ nav:
   articles: /archives/
   projects: http://github.com/medasz
   search: /search/
-  tags: /tags/
-  categories: /categories/
 
 
 # Links to your social media accounts.
@@ -190,8 +188,8 @@ google_analytics:
 
 # Fill in your Baidu Analytics tracking ID to enable Baidu Analytics.
 baidu_analytics:
-  enabled: false
-  id: 2e6da3c375c8a87f5b664cea6d4cb29c
+  enabled: true
+  id: ef21a668a8c7819eae96c95a9a9f45d3
 
 # Fill in your Cloudflare Analytics tracking ID to enable Cloudflare Analytics.
 cloudflare_analytics:
