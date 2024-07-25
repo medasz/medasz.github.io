@@ -8,7 +8,7 @@
       <link href="/2024/07/25/%E5%AE%89%E5%85%A8/%E7%89%B9%E5%AE%9A%E9%85%8D%E7%BD%AE%E4%B8%8B%E7%9A%84%E9%9B%B7%E6%B1%A0WAF%E6%94%BB%E5%87%BBIP%E6%AC%BA%E9%AA%97/"/>
       <url>/2024/07/25/%E5%AE%89%E5%85%A8/%E7%89%B9%E5%AE%9A%E9%85%8D%E7%BD%AE%E4%B8%8B%E7%9A%84%E9%9B%B7%E6%B1%A0WAF%E6%94%BB%E5%87%BBIP%E6%AC%BA%E9%AA%97/</url>
       
-        <content type="html"><![CDATA[<blockquote><p>最近用到了雷池WAF，感觉很厉害，也非常的流行。</p><p>由于本地是通过nginx做了反向代理，所以没法通过<code>从网络连接中获取</code>的方式直接获取攻击IP，需要通过请求头中加代理header头获取。</p></blockquote><p><img src="/images/1.png"></p><blockquote><p>这种情况下</p></blockquote>]]></content>
+        <content type="html"><![CDATA[<blockquote><p>最近用到了雷池WAF，感觉很厉害，也非常的流行。</p><p>由于本地是通过nginx做了反向代理，所以没法通过<code>从网络连接中获取</code>的方式直接获取攻击IP，需要通过请求头中加代理header头获取。</p></blockquote><p><img src="/images/1.png"></p><blockquote><p>这种情况下，就可以通过在请求头中自定义添加header头部：<code>X-Forwarded-For: 127.0.0.1</code>达到攻击IP的欺骗效果。</p></blockquote><p>例如：<br><img src="/images/Pasted_image_20240725235355.png"></p><h2 id="防护方式："><a href="#防护方式：" class="headerlink" title="防护方式："></a>防护方式：</h2><ul><li>自定义一个不常用的header存储代理过程中的IP地址，无法让攻击者进行猜解的目的。</li></ul>]]></content>
       
       
       <categories>
