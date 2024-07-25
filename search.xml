@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>特定配置下的雷池WAF攻击IP欺骗</title>
+      <link href="/2024/07/25/%E5%AE%89%E5%85%A8/%E7%89%B9%E5%AE%9A%E9%85%8D%E7%BD%AE%E4%B8%8B%E7%9A%84%E9%9B%B7%E6%B1%A0WAF%E6%94%BB%E5%87%BBIP%E6%AC%BA%E9%AA%97/"/>
+      <url>/2024/07/25/%E5%AE%89%E5%85%A8/%E7%89%B9%E5%AE%9A%E9%85%8D%E7%BD%AE%E4%B8%8B%E7%9A%84%E9%9B%B7%E6%B1%A0WAF%E6%94%BB%E5%87%BBIP%E6%AC%BA%E9%AA%97/</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>最近用到了雷池WAF，感觉很厉害，也非常的流行。</p><p>由于本地是通过nginx做了反向代理，所以没法通过</p></blockquote>]]></content>
+      
+      
+      <categories>
+          
+          <category> 安全 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>第一篇博客</title>
       <link href="/2024/07/03/%E6%9D%82%E8%B0%88/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
       <url>/2024/07/03/%E6%9D%82%E8%B0%88/%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
