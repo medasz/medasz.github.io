@@ -12,5 +12,5 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /links/
 
-Sitemap: http://javahikers.gitee.io/sitemap.xml
-Sitemap: http://javahikers.gitee.io/baidusitemap.xml
+Sitemap: http://home.zhujiahao.icu/sitemap.xml
+Sitemap: http://home.zhujiahao.icu/baidusitemap.xml
