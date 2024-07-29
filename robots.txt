@@ -12,5 +12,5 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /links/
 
-Sitemap: http://home.zhujiahao.icu/sitemap.xml
-Sitemap: http://home.zhujiahao.icu/baidusitemap.xml
+Sitemap: https://home.zhujiahao.icu/sitemap.xml
+Sitemap: https://home.zhujiahao.icu/baidusitemap.xml
