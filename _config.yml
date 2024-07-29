@@ -104,3 +104,6 @@ deploy:
   type: git
   repo: https://github.com/medasz/medasz.github.io
   branch: html
+
+sitemap:
+  path: sitemap.xml
