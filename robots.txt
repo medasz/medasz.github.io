@@ -12,5 +12,5 @@ Disallow: /js/
 Disallow: /css/
 Disallow: /scaffolds/
 
-Sitemap: https://home.zhujiahao.icu/sitemap.xml
-Sitemap: https://home.zhujiahao.icu/baidusitemap.xml
+Sitemap: https://medasz.github.io/sitemap.xml
+Sitemap: https://medasz.github.io/baidusitemap.xml
