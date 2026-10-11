@@ -96,10 +96,14 @@ var searchFunc = function(path, searchId, contentId) {
 
               if( indexTitle >= 0 || indexContent >= 0 ){
                 matches += 1;
-                if (indexContent < 0) {
-                  indexContent = 0;
-                }
-                if (firstOccur < 0) {
+                // if (indexContent < 0) {
+                //   indexContent = 0;
+                // }
+                // if (firstOccur < 0) {
+                //   firstOccur = indexContent;
+                // }
+                // 只有正文命中时才记录摘要位置
+                if (indexContent >= 0 && firstOccur < 0) {
                   firstOccur = indexContent;
                 }
               }
