@@ -1,5 +1,5 @@
 ---
-title: 通用URLDownloadToFile&ShellExecute ShellCode
+title: 通用URLDownloadToFileA&ShellExecute ShellCode
 date: 2026-10-15
 author: medasz
 toc: "true"
