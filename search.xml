@@ -5,10 +5,29 @@
     
     <entry>
       <title>PE文件格式学习</title>
-      <link href="/2026/10/11/%E5%AE%89%E5%85%A8/PE%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E5%AD%A6%E4%B9%A0/"/>
-      <url>/2026/10/11/%E5%AE%89%E5%85%A8/PE%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E5%AD%A6%E4%B9%A0/</url>
+      <link href="/2026/10/15/%E5%AE%89%E5%85%A8/PE%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E5%AD%A6%E4%B9%A0/"/>
+      <url>/2026/10/15/%E5%AE%89%E5%85%A8/PE%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E5%AD%A6%E4%B9%A0/</url>
       
-        <content type="html"><![CDATA[<p>hello</p>]]></content>
+        <content type="html"><![CDATA[<p>每个<code>dll</code>都有一个<code>导出表</code>，每个<code>导出表</code>都有三个</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 安全 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>通用URLDownloadToFile&amp;ShellExecute ShellCode</title>
+      <link href="/2026/10/15/%E5%AE%89%E5%85%A8/%E9%80%9A%E7%94%A8URLDownloadToFile&amp;ShellExecute%20ShellCode/"/>
+      <url>/2026/10/15/%E5%AE%89%E5%85%A8/%E9%80%9A%E7%94%A8URLDownloadToFile&amp;ShellExecute%20ShellCode/</url>
+      
+        <content type="html"><![CDATA[<p>需要用到的API：</p><table><thead><tr><th>API</th><th>动态链接库</th></tr></thead><tbody><tr><td></td><td></td></tr></tbody></table>]]></content>
       
       
       <categories>
