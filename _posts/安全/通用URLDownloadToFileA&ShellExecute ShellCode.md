@@ -19,7 +19,7 @@ link.exe /dump /disasm test.obj
 ```
 
 x86中获取kernel32基址：
-![[images/kernel32基址的获得方法.drawio.png]]
+![](/images/kernel32基址的获得方法.png)
 ```
 typedef struct _PEB {
   BYTE                          Reserved1[2];
