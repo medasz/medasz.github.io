@@ -18,7 +18,8 @@ ml.exe /c /coff test.asm
 link.exe /dump /disasm test.obj
 ```
 
-
+x86中获取kernel32基址：
+![[kernel32基址的获得方法.drawio.png]]
 ```
 typedef struct _PEB {
   BYTE                          Reserved1[2];
