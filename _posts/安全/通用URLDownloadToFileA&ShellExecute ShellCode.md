@@ -18,6 +18,7 @@ ml.exe /c /coff test.asm
 link.exe /dump /disasm test.obj
 ```
 
+![](/images/867232_UQX698BZWQ7UZ8Y.jpg)
 x86中获取kernel32基址：
 ![](/images/kernel32基址的获得方法.png)
 ```
