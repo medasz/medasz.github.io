@@ -21,30 +21,8 @@ link.exe /dump /disasm test.obj
 ![](/images/867232_UQX698BZWQ7UZ8Y.jpg)
 x86中获取kernel32基址：
 ![](/images/kernel32基址的获得方法.png)
-```
-typedef struct _PEB {
-  BYTE                          Reserved1[2];
-  BYTE                          BeingDebugged;
-  BYTE                          Reserved2[1];
-  PVOID                         Reserved3[2];
-  PPEB_LDR_DATA                 Ldr;
-  PRTL_USER_PROCESS_PARAMETERS  ProcessParameters;
-  PVOID                         Reserved4[3];
-  PVOID                         AtlThunkSListPtr;
-  PVOID                         Reserved5;
-  ULONG                         Reserved6;
-  PVOID                         Reserved7;
-  ULONG                         Reserved8;
-  ULONG                         AtlThunkSListPtr32;
-  PVOID                         Reserved9[45];
-  BYTE                          Reserved10[96];
-  PPS_POST_PROCESS_INIT_ROUTINE PostProcessInitRoutine;
-  BYTE                          Reserved11[128];
-  PVOID                         Reserved12[1];
-  ULONG                         SessionId;
-} PEB, *PPEB;
-```
-
+PE文件格式：
+![](/images/pe.png)
 需要用到的API：
 
 | API | 动态链接库 |
