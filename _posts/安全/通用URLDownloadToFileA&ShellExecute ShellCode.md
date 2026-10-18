@@ -28,25 +28,35 @@ DOS MZ Header的结构体定义如下：_IMAGE_DOS_HEADER
 //0x40 bytes (sizeof)
 struct _IMAGE_DOS_HEADER
 {
-    USHORT e_magic;                  //0x0
-    USHORT e_cblp;                   //0x2
-    USHORT e_cp;                     //0x4
-    USHORT e_crlc;                   //0x6
-    USHORT e_cparhdr;                //0x8
-    USHORT e_minalloc;               //0xa
-    USHORT e_maxalloc;               //0xc
-    USHORT e_ss;                     //0xe
-    USHORT e_sp;                     //0x10
-    USHORT e_csum;                   //0x12
-    USHORT e_ip;                     //0x14
-    USHORT e_cs;                     //0x16
-    USHORT e_lfarlc;                 //0x18
-    USHORT e_ovno;                   //0x1a
-    USHORT e_res[4];                 //0x1c
-    USHORT e_oemid;                  //0x24
-    USHORT e_oeminfo;                //0x26
-    USHORT e_res2[10];               //0x28
-    LONG e_lfanew;                   //0x3c
+    USHORT e_magic;                  //0x0        可执行文件标记“MZ”
+    USHORT e_cblp;                   //0x2        文件最后页的字节数
+    USHORT e_cp;                     //0x4        文件页数
+    USHORT e_crlc;                   //0x6        重定义元素个数
+    USHORT e_cparhdr;                //0x8        头部尺寸，以段落为单位
+    USHORT e_minalloc;               //0xa        所需的最小附加段
+    USHORT e_maxalloc;               //0xc        所需的最大附加段
+    USHORT e_ss;                     //0xe        初始化堆栈段
+    USHORT e_sp;                     //0x10       初始化堆栈指针
+    USHORT e_csum;                   //0x12       校验和
+    USHORT e_ip;                     //0x14       入口IP值
+    USHORT e_cs;                     //0x16       入口CS值
+    USHORT e_lfarlc;                 //0x18       重分配表文件地址
+    USHORT e_ovno;                   //0x1a       覆盖号
+    USHORT e_res[4];                 //0x1c       保留字
+    USHORT e_oemid;                  //0x24       OEM标识符
+    USHORT e_oeminfo;                //0x26       OEM信息
+    USHORT e_res2[10];               //0x28       保留字
+    LONG e_lfanew;                   //0x3c       PE文件头的相对偏移地址
+};
+```
+PE文件头在winnt.h中由IMAGE_NT_HEADERS32
+```
+//0xf8 bytes (sizeof)
+struct _IMAGE_NT_HEADERS
+{
+    ULONG Signature;                               //0x0
+    struct _IMAGE_FILE_HEADER FileHeader;          //0x4
+    struct _IMAGE_OPTIONAL_HEADER OptionalHeader;  //0x18
 };
 ```
 需要用到的API：
