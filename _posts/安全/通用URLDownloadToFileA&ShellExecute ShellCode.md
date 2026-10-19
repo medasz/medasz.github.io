@@ -49,16 +49,43 @@ struct _IMAGE_DOS_HEADER
     LONG e_lfanew;                   //0x3c       PE文件头的相对偏移地址
 };
 ```
-PE文件头在winnt.h中由IMAGE_NT_HEADERS32
+PE文件头在winnt.h中由IMAGE_NT_HEADERS32结构体定义
 ```
 //0xf8 bytes (sizeof)
 struct _IMAGE_NT_HEADERS
 {
-    ULONG Signature;                               //0x0
-    struct _IMAGE_FILE_HEADER FileHeader;          //0x4
-    struct _IMAGE_OPTIONAL_HEADER OptionalHeader;  //0x18
+    ULONG Signature;                               //0x0        PE文件标识
+    struct _IMAGE_FILE_HEADER FileHeader;          //0x4        映像文件头
+    struct _IMAGE_OPTIONAL_HEADER OptionalHeader;  //0x18       可选映像头
 };
 ```
+`Signature`默认是`0x00004550`，ASCII码是`PE00`
+```
+//0x14 bytes (sizeof)
+struct _IMAGE_FILE_HEADER
+{
+    USHORT Machine;                      //0x0      运行平台
+    USHORT NumberOfSections;             //0x2      文件的区块数
+    ULONG TimeDateStamp;                 //0x4      文件创建日期和时间
+    ULONG PointerToSymbolTable;          //0x8      符号表指针
+    ULONG NumberOfSymbols;               //0xc      符号表中的符号个数
+    USHORT SizeOfOptionalHeader;         //0x10     IMAGE_OPTIONAL_HEADER32结构大小
+    USHORT Characteristics;              //0x12     文件属性
+};
+```
+`Machine`：可执行文件的目标CPU类型。
+
+| 机器类型            | 预定义标志                      | 十六进制值 |
+| --------------- | -------------------------- | ----- |
+| Intel i386      | IMAGE_FILE_MACHINE_I386    | 14CH  |
+| Intel 64        | IMAGE_FILE_MACHINE_IA64    | 200H  |
+| IBM Power PC    | IMAGE_FILE_MACHINE_POWERPC | 1F0H  |
+| Dec Alpha AXP   | IMAGE_FILE_MACHINE_ALPHA   | 184H  |
+| Dec Alpha AXP64 | IMAGE_FILE_MACHINE_ALPHA64 | 284H  |
+
+
+
+
 需要用到的API：
 
 | API | 动态链接库 |
