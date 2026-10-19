@@ -82,7 +82,7 @@ struct _IMAGE_FILE_HEADER
 | IBM Power PC    | IMAGE_FILE_MACHINE_POWERPC | 1F0H  |
 | Dec Alpha AXP   | IMAGE_FILE_MACHINE_ALPHA   | 184H  |
 | Dec Alpha AXP64 | IMAGE_FILE_MACHINE_ALPHA64 | 284H  |
-
+`NumberOfSections`:文件中的区段数目，`区段表`紧跟在PE文件头后面。
 
 
 
