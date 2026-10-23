@@ -23,8 +23,11 @@ link.exe /dump /disasm test.obj
   height="800"
   style="border: 0;">
 </iframe>
+
+
 ![](/images/867232_UQX698BZWQ7UZ8Y.jpg)
 x86中获取kernel32基址：
+
 ![](/images/kernel32基址的获得方法.png)
 PE文件格式：
 ![](/images/pe.png)通过dll基址动态寻找函数地址
