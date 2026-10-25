@@ -18,9 +18,10 @@ ml.exe /c /coff test.asm
 #test.obj是上一个命令执行之后的产物
 link.exe /dump /disasm test.obj
 ```
+### PE格式
 <iframe src="/images/PEFormat.pdf" width="100%" height="800" style="border: 0;"></iframe>
 
-
+### TEB
 ![](/images/867232_UQX698BZWQ7UZ8Y.jpg)
 x86中获取kernel32基址：
 
