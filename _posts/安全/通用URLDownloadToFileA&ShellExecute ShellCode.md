@@ -6,6 +6,7 @@ toc: "true"
 tags:
 categories: 安全
 ---
+[PE格式资源网站](https://shell-storm.org/formats/pe.html)
 ![](/images/ascii.png)
 x86架构中：
 1. 栈是从`高地址`向`低地址`生长的，也就是`向下生长`。
