@@ -23,6 +23,19 @@
     
     
     <entry>
+      <title>WIN32常用汇编指令和寄存器以及解释</title>
+      <link href="/2026/11/05/%E5%AE%89%E5%85%A8/WIN32%E5%B8%B8%E7%94%A8%E6%B1%87%E7%BC%96%E6%8C%87%E4%BB%A4%E5%92%8C%E5%AF%84%E5%AD%98%E5%99%A8%E4%BB%A5%E5%8F%8A%E8%A7%A3%E9%87%8A/"/>
+      <url>/2026/11/05/%E5%AE%89%E5%85%A8/WIN32%E5%B8%B8%E7%94%A8%E6%B1%87%E7%BC%96%E6%8C%87%E4%BB%A4%E5%92%8C%E5%AF%84%E5%AD%98%E5%99%A8%E4%BB%A5%E5%8F%8A%E8%A7%A3%E9%87%8A/</url>
+      
+        <content type="html"><![CDATA[<table><thead><tr><th>通用寄存器</th><th>解释</th></tr></thead><tbody><tr><td>eax</td><td>32位通用寄存器</td></tr><tr><td>ebx</td><td>32位通用寄存器</td></tr><tr><td>ecx</td><td>32位通用寄存器</td></tr><tr><td>edx</td><td>32位通用寄存器</td></tr><tr><td>ax,bx,cx,dx</td><td>eax,ebx,ecx,edx的低16位通用寄存器</td></tr><tr><td>al,bl,cl,dl</td><td>ax,bx,cx,dx的低8位通用寄存器</td></tr><tr><td>ah,bh,ch,dh</td><td>ax,bx,cx,dx的高8位通用寄存器</td></tr></tbody></table>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PE文件格式学习</title>
       <link href="/2026/10/15/%E5%AE%89%E5%85%A8/PE%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E5%AD%A6%E4%B9%A0/"/>
       <url>/2026/10/15/%E5%AE%89%E5%85%A8/PE%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E5%AD%A6%E4%B9%A0/</url>
