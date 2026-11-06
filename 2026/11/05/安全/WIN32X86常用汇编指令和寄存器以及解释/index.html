@@ -15,7 +15,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://medasz.github.io/images/registers-overview.svg">
 <meta property="article:published_time" content="2026-11-05T00:00:00.000Z">
-<meta property="article:modified_time" content="2026-11-05T15:48:52.605Z">
+<meta property="article:modified_time" content="2026-11-06T04:03:00.323Z">
 <meta property="article:author" content="Medasz">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://medasz.github.io/images/registers-overview.svg">
@@ -238,6 +238,14 @@
 <tbody><tr>
 <td>cld</td>
 <td>DF&#x3D;0, 字符串操作正向递增</td>
+</tr>
+<tr>
+<td>lodsd</td>
+<td>1.从 <code>DS:ESI</code> 指向的内存地址读取 4 字节数据。<br>2.将读取的数据存入 <code>EAX</code>。<br>3.根据方向标志 <code>DF</code> 自动调整 <code>ESI</code>。</td>
+</tr>
+<tr>
+<td>stosd</td>
+<td></td>
 </tr>
 <tr>
 <td></td>
