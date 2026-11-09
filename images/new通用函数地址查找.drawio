@@ -13,13 +13,13 @@
         <mxCell id="toDAhDziTeKLQHUUoC2b-3" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="DF" vertex="1">
           <mxGeometry height="30" width="60" x="520" y="340" as="geometry" />
         </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="字符串&quot;ExitProcess&quot;的hash值" vertex="1">
+        <mxCell id="toDAhDziTeKLQHUUoC2b-6" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="字符串&quot;MessageBoxA&quot;的hash值" vertex="1">
           <mxGeometry height="30" width="190" x="240" y="495" as="geometry" />
         </mxCell>
         <mxCell id="toDAhDziTeKLQHUUoC2b-7" parent="1" style="whiteSpace=wrap;html=1;" value="4FD18963" vertex="1">
           <mxGeometry height="60" width="120" x="120" y="420" as="geometry" />
         </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="字符串&quot;MessageBoxA&quot;的hash值" vertex="1">
+        <mxCell id="toDAhDziTeKLQHUUoC2b-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="字符串&quot;ExitProcess&quot;的hash值" vertex="1">
           <mxGeometry height="30" width="190" x="240" y="435" as="geometry" />
         </mxCell>
         <mxCell id="toDAhDziTeKLQHUUoC2b-9" parent="1" style="whiteSpace=wrap;html=1;" value="0C917432" vertex="1">
@@ -28,7 +28,7 @@
         <mxCell id="toDAhDziTeKLQHUUoC2b-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="字符串&quot;LoadLibraryA&quot;的hash值" vertex="1">
           <mxGeometry height="30" width="190" x="240" y="375" as="geometry" />
         </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-11" parent="1" style="whiteSpace=wrap;html=1;" value="esp1+4" vertex="1">
+        <mxCell id="toDAhDziTeKLQHUUoC2b-11" parent="1" style="whiteSpace=wrap;html=1;" value="esp1+8" vertex="1">
           <mxGeometry height="60" width="120" x="580" y="395" as="geometry" />
         </mxCell>
         <mxCell id="toDAhDziTeKLQHUUoC2b-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="esi" vertex="1">
@@ -55,10 +55,10 @@
         <mxCell id="toDAhDziTeKLQHUUoC2b-20" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
           <mxGeometry height="60" width="120" x="120" y="300" as="geometry" />
         </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-21" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+        <mxCell id="toDAhDziTeKLQHUUoC2b-21" parent="1" style="whiteSpace=wrap;html=1;" value="ExitProcess函数地址" vertex="1">
           <mxGeometry height="60" width="120" x="120" y="240" as="geometry" />
         </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-22" parent="1" style="whiteSpace=wrap;html=1;" value="" vertex="1">
+        <mxCell id="toDAhDziTeKLQHUUoC2b-22" parent="1" style="whiteSpace=wrap;html=1;" value="LoadLibraryA函数地址" vertex="1">
           <mxGeometry height="60" width="120" x="120" y="180" as="geometry" />
         </mxCell>
         <mxCell id="toDAhDziTeKLQHUUoC2b-23" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
@@ -115,19 +115,7 @@
         <mxCell id="toDAhDziTeKLQHUUoC2b-37" parent="1" style="whiteSpace=wrap;html=1;" value="esp2" vertex="1">
           <mxGeometry height="60" width="120" x="120" y="-120" as="geometry" />
         </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-38" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
-          <mxGeometry relative="1" width="100" as="geometry">
-            <Array as="points" />
-            <mxPoint x="360" y="-120" as="sourcePoint" />
-            <mxPoint x="240" y="-120" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-39" connectable="0" parent="toDAhDziTeKLQHUUoC2b-38" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="esp3" vertex="1">
-          <mxGeometry relative="1" x="-0.1333" y="-1" as="geometry">
-            <mxPoint x="2" y="1" as="offset" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-41" parent="1" style="whiteSpace=wrap;html=1;" value="kernel32函数名索引表地址" vertex="1">
+        <mxCell id="toDAhDziTeKLQHUUoC2b-41" parent="1" style="whiteSpace=wrap;html=1;" value="函数名索引表地址" vertex="1">
           <mxGeometry height="60" width="120" x="580" y="225" as="geometry" />
         </mxCell>
         <mxCell id="toDAhDziTeKLQHUUoC2b-42" parent="1" style="whiteSpace=wrap;html=1;" value="0" vertex="1">
@@ -136,59 +124,35 @@
         <mxCell id="toDAhDziTeKLQHUUoC2b-43" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="edx" vertex="1">
           <mxGeometry height="30" width="60" x="520" y="165" as="geometry" />
         </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-44" parent="1" style="whiteSpace=wrap;html=1;" value="kernel32导出表的VA" vertex="1">
+        <mxCell id="toDAhDziTeKLQHUUoC2b-44" parent="1" style="whiteSpace=wrap;html=1;" value="user32的导出表地址" vertex="1">
           <mxGeometry height="60" width="120" x="580" y="70" as="geometry" />
         </mxCell>
         <mxCell id="toDAhDziTeKLQHUUoC2b-45" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ecx" vertex="1">
           <mxGeometry height="30" width="60" x="520" y="85" as="geometry" />
         </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-46" parent="1" style="whiteSpace=wrap;html=1;" value="kernel32基址" vertex="1">
+        <mxCell id="toDAhDziTeKLQHUUoC2b-46" parent="1" style="whiteSpace=wrap;html=1;" value="user32基址" vertex="1">
           <mxGeometry height="60" width="120" x="580" y="540" as="geometry" />
         </mxCell>
         <mxCell id="toDAhDziTeKLQHUUoC2b-47" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ebp" vertex="1">
           <mxGeometry height="30" width="60" x="520" y="555" as="geometry" />
         </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-48" parent="1" style="whiteSpace=wrap;html=1;" value="PE的RVA" vertex="1">
+        <mxCell id="toDAhDziTeKLQHUUoC2b-48" parent="1" style="whiteSpace=wrap;html=1;" value="user32的PE头的RVA" vertex="1">
           <mxGeometry height="60" width="120" x="580" as="geometry" />
         </mxCell>
         <mxCell id="toDAhDziTeKLQHUUoC2b-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="eax" vertex="1">
           <mxGeometry height="30" width="60" x="520" y="15" as="geometry" />
         </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-50" parent="1" style="whiteSpace=wrap;html=1;" value="0C917432" vertex="1">
-          <mxGeometry height="60" width="120" x="120" y="-180" as="geometry" />
-        </mxCell>
         <mxCell id="toDAhDziTeKLQHUUoC2b-51" edge="1" parent="1" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;rounded=0;defaultLabelBackgroundColor=page;" value="">
           <mxGeometry relative="1" width="100" as="geometry">
             <Array as="points" />
-            <mxPoint x="360" y="-600" as="sourcePoint" />
-            <mxPoint x="240" y="-600" as="targetPoint" />
+            <mxPoint x="360" y="-120" as="sourcePoint" />
+            <mxPoint x="240" y="-120" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="toDAhDziTeKLQHUUoC2b-52" connectable="0" parent="toDAhDziTeKLQHUUoC2b-51" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];inheritText=1;defaultLabelBackgroundColor=page;" value="esp" vertex="1">
           <mxGeometry relative="1" x="-0.1333" y="-1" as="geometry">
             <mxPoint x="2" y="1" as="offset" />
           </mxGeometry>
-        </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-53" parent="1" style="whiteSpace=wrap;html=1;" value="第二个节点 (kernel32.dll 的 LDR_DATA_TABLE_ENTRY)" vertex="1">
-          <mxGeometry height="60" width="120" x="120" y="-240" as="geometry" />
-        </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-54" parent="1" style="whiteSpace=wrap;html=1;" value="0" vertex="1">
-          <mxGeometry height="60" width="120" x="120" y="-300" as="geometry" />
-        </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-55" parent="1" style="whiteSpace=wrap;html=1;" value="PEB地址" vertex="1">
-          <mxGeometry height="60" width="120" x="120" y="-360" as="geometry" />
-        </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-56" parent="1" style="whiteSpace=wrap;html=1;" value="esp3" vertex="1">
-          <mxGeometry height="60" width="120" x="120" y="-420" as="geometry" />
-        </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-57" parent="1" style="whiteSpace=wrap;html=1;" value="kernel32基址" vertex="1">
-          <mxGeometry height="60" width="120" x="120" y="-480" as="geometry" />
-        </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-59" parent="1" style="whiteSpace=wrap;html=1;" value="esp1+4" vertex="1">
-          <mxGeometry height="60" width="120" x="120" y="-540" as="geometry" />
-        </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-60" parent="1" style="whiteSpace=wrap;html=1;" value="esi-C" vertex="1">
-          <mxGeometry height="60" width="120" x="120" y="-600" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
