@@ -46,7 +46,7 @@
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-18" parent="1" style="whiteSpace=wrap;html=1;" value="esi-C" vertex="1">
+        <mxCell id="toDAhDziTeKLQHUUoC2b-18" parent="1" style="whiteSpace=wrap;html=1;" value="0" vertex="1">
           <mxGeometry height="60" width="120" x="580" y="465" as="geometry" />
         </mxCell>
         <mxCell id="toDAhDziTeKLQHUUoC2b-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="edi" vertex="1">
@@ -127,7 +127,7 @@
             <mxPoint x="2" y="1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-41" parent="1" style="whiteSpace=wrap;html=1;" value="PEB地址" vertex="1">
+        <mxCell id="toDAhDziTeKLQHUUoC2b-41" parent="1" style="whiteSpace=wrap;html=1;" value="kernel32函数名索引表地址" vertex="1">
           <mxGeometry height="60" width="120" x="580" y="225" as="geometry" />
         </mxCell>
         <mxCell id="toDAhDziTeKLQHUUoC2b-42" parent="1" style="whiteSpace=wrap;html=1;" value="0" vertex="1">
@@ -136,7 +136,7 @@
         <mxCell id="toDAhDziTeKLQHUUoC2b-43" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="edx" vertex="1">
           <mxGeometry height="30" width="60" x="520" y="165" as="geometry" />
         </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-44" parent="1" style="whiteSpace=wrap;html=1;" value="第二个节点 (kernel32.dll 的 LDR_DATA_TABLE_ENTRY)" vertex="1">
+        <mxCell id="toDAhDziTeKLQHUUoC2b-44" parent="1" style="whiteSpace=wrap;html=1;" value="kernel32导出表的VA" vertex="1">
           <mxGeometry height="60" width="120" x="580" y="70" as="geometry" />
         </mxCell>
         <mxCell id="toDAhDziTeKLQHUUoC2b-45" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ecx" vertex="1">
@@ -148,7 +148,7 @@
         <mxCell id="toDAhDziTeKLQHUUoC2b-47" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="ebp" vertex="1">
           <mxGeometry height="30" width="60" x="520" y="555" as="geometry" />
         </mxCell>
-        <mxCell id="toDAhDziTeKLQHUUoC2b-48" parent="1" style="whiteSpace=wrap;html=1;" value="0C917432" vertex="1">
+        <mxCell id="toDAhDziTeKLQHUUoC2b-48" parent="1" style="whiteSpace=wrap;html=1;" value="PE的RVA" vertex="1">
           <mxGeometry height="60" width="120" x="580" as="geometry" />
         </mxCell>
         <mxCell id="toDAhDziTeKLQHUUoC2b-49" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="eax" vertex="1">

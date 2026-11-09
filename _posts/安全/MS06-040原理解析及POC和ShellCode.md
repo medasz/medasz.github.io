@@ -6,3 +6,4 @@ toc: "true"
 tags:
 categories: 安全
 ---
+可复现平台：`windows xp pro sp1`,`windows 2000 sp4`
